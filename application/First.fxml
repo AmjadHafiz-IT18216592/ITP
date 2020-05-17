@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="820.0" prefWidth="1478.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FirstController">
+   <children>
+      <Pane blendMode="SRC_ATOP" layoutX="50.0" layoutY="59.0" prefHeight="493.0" prefWidth="459.0" style="-fx-background-color: #AAB0EF;">
+         <children>
+            <ComboBox fx:id="cb3" layoutX="88.0" layoutY="235.0" prefHeight="38.0" prefWidth="284.0" promptText="Quantity" style="-fx-background-color: #AAB0EF;" stylesheets="@application.css">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></ComboBox>
+            <Button fx:id="reset" cancelButton="true" layoutX="323.0" layoutY="323.0" mnemonicParsing="false" onAction="#resetValues" prefHeight="39.0" prefWidth="84.0" style="-fx-background-color: #072F5F;" text="Reset" textFill="#f8eaea">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="next" layoutX="66.0" layoutY="323.0" mnemonicParsing="false" onAction="#insert" prefHeight="39.0" prefWidth="77.0" style="-fx-background-color: #072F5F;" text="Next" textFill="#eeeeee">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+            <Button fx:id="tot" layoutX="201.0" layoutY="323.0" mnemonicParsing="false" onAction="#total" prefHeight="39.0" prefWidth="77.0" style="-fx-background-color: #072F5F;" text="Total">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="pick" layoutX="66.0" layoutY="384.0" mnemonicParsing="false" onAction="#editDetail" prefHeight="39.0" prefWidth="77.0" style="-fx-background-color: #072F5F;" text="Pick" textFill="#fcfcfc">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label layoutX="138.0" layoutY="30.0" prefHeight="70.0" prefWidth="227.0" text="Ishra's" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.25728155339805825">
+                     <stops>
+                        <Stop color="#040436" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="Century Gothic" size="67.0" />
+               </font>
+            </Label>
+            <Button fx:id="del" layoutX="323.0" layoutY="384.0" mnemonicParsing="false" onAction="#delete" prefHeight="39.0" prefWidth="84.0" style="-fx-background-color: #072F5F;" text="Delete" textFill="#eeeded">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <TextField fx:id="tx" alignment="BOTTOM_LEFT" layoutX="88.0" layoutY="162.0" prefHeight="38.0" prefWidth="284.0" promptText="Item Number" style="-fx-background-color: #AAB0EF;" stylesheets="@application.css">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <Line endX="183.0" layoutX="198.0" layoutY="200.0" startX="-100.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Line>
+            <Button fx:id="back1" layoutX="26.0" layoutY="21.0" mnemonicParsing="false" onAction="#Back" prefHeight="39.0" prefWidth="40.0" styleClass="previousButton" stylesheets="@application.css" />
+            <Line endX="180.0" layoutX="198.0" layoutY="272.0" startX="-100.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Line>
+            <Button fx:id="edit" layoutX="198.0" layoutY="384.0" mnemonicParsing="false" onAction="#saveEditedDetail" prefHeight="39.0" prefWidth="84.0" style="-fx-background-color: #072F5F;" text="Edit" textFill="#fcfcfc">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <ImageView fitHeight="48.0" fitWidth="83.0" layoutX="26.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Rectangle%208.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="514.0" layoutY="558.0" prefHeight="200.0" prefWidth="924.0" style="-fx-background-color: #AAB0EF;">
+         <children>
+            <Label layoutX="26.0" layoutY="87.0" text="Discount">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="32.0" text="Total">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="141.0" text="Net Amount">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="totView" alignment="BOTTOM_LEFT" layoutX="211.0" layoutY="27.0" prefHeight="31.0" prefWidth="227.0" stylesheets="@application.css">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="dis" alignment="BOTTOM_LEFT" layoutX="211.0" layoutY="82.0" prefHeight="31.0" prefWidth="227.0" stylesheets="@application.css">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="na" alignment="BOTTOM_LEFT" layoutX="211.0" layoutY="136.0" prefHeight="31.0" prefWidth="227.0" stylesheets="@application.css">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+            </TextField>
+         </children></Pane>
+      <Pane layoutX="50.0" layoutY="558.0" prefHeight="200.0" prefWidth="459.0" style="-fx-background-color: #AAB0EF;">
+         <children>
+            <TextField fx:id="ga" layoutX="68.0" layoutY="32.0" prefHeight="38.0" prefWidth="284.0" promptText="Given Amount" style="-fx-background-color: #AAB0EF;" stylesheets="@application.css">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font size="17.0" />
+               </font></TextField>
+            <Label layoutX="68.0" layoutY="125.0" prefHeight="31.0" prefWidth="84.0" text="Balance">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="ok" cancelButton="true" layoutX="373.0" layoutY="32.0" mnemonicParsing="false" onAction="#calcBlance" prefHeight="39.0" prefWidth="56.0" style="-fx-background-color: #072F5F;" text="OK" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow height="27.22" radius="11.555" />
+               </effect>
+            </Button>
+            <TextField fx:id="bl" alignment="BOTTOM_LEFT" layoutX="151.0" layoutY="121.0" prefHeight="38.0" prefWidth="278.0" stylesheets="@application.css">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+            </TextField>
+            <Line endX="177.0" endY="-1.0" layoutX="175.0" layoutY="71.0" startX="-100.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Line>
+         </children></Pane>
+      <Pane layoutX="515.0" layoutY="59.0" prefHeight="493.0" prefWidth="924.0" style="-fx-background-color: #AAB0EF;" styleClass="lable" stylesheets="@application.css">
+         <children>
+            <TableView fx:id="table" layoutX="20.0" layoutY="63.0" onKeyPressed="#editDetail" prefHeight="403.0" prefWidth="884.0" style="-fx-background-color: #AAB0EF;" stylesheets="@application.css">
+              <columns>
+                <TableColumn fx:id="Item" prefWidth="191.0" styleClass="column-header-background" text="Item" />
+                <TableColumn fx:id="Brand" prefWidth="172.0" styleClass="column-header-background" text="Brand" />
+                <TableColumn fx:id="Quantity" prefWidth="158.0" styleClass="column-header-background" text="Quantity" />
+                <TableColumn fx:id="Rate" prefWidth="185.0" styleClass="column-header-background" text="Rate" />
+                <TableColumn fx:id="Cost" prefWidth="178.0" styleClass="column-header-background" text="Cost" />
+                
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Button fx:id="pb" layoutX="1082.0" layoutY="585.0" mnemonicParsing="false" onAction="#printBill" prefHeight="39.0" prefWidth="199.0" style="-fx-background-color: #5ca1a9;" text="Bill">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <DropShadow height="17.89" radius="10.192499999999999" width="24.88" />
+         </effect>
+         <textFill>
+            <LinearGradient endX="0.2621359223300971" endY="1.0" startX="0.09708737864077668" startY="0.7233009708737863">
+               <stops>
+                  <Stop color="#5940e4" />
+                  <Stop color="#17315b" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="sales" layoutX="1082.0" layoutY="670.0" mnemonicParsing="false" onAction="#tosales" prefHeight="39.0" prefWidth="199.0" style="-fx-background-color: #5ca1a9;" text="Sales">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <textFill>
+            <RadialGradient centerX="0.5795454545454546" centerY="0.5" focusDistance="0.4878048780487805" radius="1.0">
+               <stops>
+                  <Stop color="#5940e4" />
+                  <Stop color="#17315b" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+     
+      
+   </children>
+</AnchorPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: #AAB0EF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PBillController">
+   <children>
+      <Pane layoutX="208.0" layoutY="38.0" prefHeight="713.0" prefWidth="845.0" style="-fx-background-color: FAFBF5; -fx-border-color: #808080;">
+         <children>
+            <TableView fx:id="table" layoutX="100.0" layoutY="194.0" prefHeight="236.0" prefWidth="635.0" style="-fx-background-color: FAFBF5;" styleClass="table-View" stylesheets="@application.css">
+               <columns>
+                  <TableColumn fx:id="Item" prefWidth="121.0" text="Item" />
+                  <TableColumn fx:id="Brand" prefWidth="138.0" styleClass="column-header-background" text="Brand" />
+                  <TableColumn fx:id="Rate" prefWidth="128.0" styleClass="column-header-background" text="Rate" />
+                  <TableColumn fx:id="Quantity" prefWidth="117.0" styleClass="column-header-background" text="Quantity" />
+                  <TableColumn fx:id="Cost" prefWidth="130.0" styleClass="column-header-background" text="Cost" />
+               </columns>
+            </TableView>
+            <Label layoutX="605.0" layoutY="152.0" text="Date" />
+            <Label layoutX="30.0" layoutY="152.0" text="Invoice No:" />
+            <TextField fx:id="billNo" layoutX="119.0" layoutY="147.0" prefHeight="31.0" prefWidth="166.0" style="-fx-background-color: FAFBF5;" />
+            <TextField fx:id="date" layoutX="648.0" layoutY="147.0" style="-fx-background-color: FAFBF5;" />
+            <Label layoutX="479.0" layoutY="511.0" prefHeight="39.0" prefWidth="180.0" text="Discount Amount" />
+            <TextField fx:id="tot" layoutX="666.0" layoutY="475.0" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: FAFBF5;" />
+            <Label layoutX="479.0" layoutY="471.0" prefHeight="39.0" prefWidth="135.0" text="Total Amount" />
+            <Label layoutX="479.0" layoutY="547.0" prefHeight="39.0" prefWidth="135.0" text="Net Amount" />
+            <TextField fx:id="discount" layoutX="666.0" layoutY="515.0" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: FAFBF5;" />
+            <TextField fx:id="netAmount" layoutX="666.0" layoutY="551.0" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: FAFBF5;" />
+            <Label layoutX="479.0" layoutY="586.0" prefHeight="39.0" prefWidth="135.0" text="Balance" />
+            <TextField fx:id="balance" layoutX="666.0" layoutY="590.0" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: FAFBF5;" />
+            <Label layoutX="310.0" layoutY="152.0" text="Emp Name:" />
+            <TextField fx:id="ename" layoutX="406.0" layoutY="147.0" style="-fx-background-color: FAFBF5;" />
+            <Text layoutX="320.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ishra's Invoice" wrappingWidth="196.99999105930328">
+               <font>
+                  <Font size="30.0" />
+               </font></Text>
+            <Label layoutX="67.0" layoutY="475.0" prefHeight="39.0" prefWidth="135.0" text="No of Items" />
+            <TextField fx:id="noOfItems" layoutX="198.0" layoutY="479.0" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: FAFBF5;" />
+            <Label layoutX="325.0" layoutY="61.0" prefHeight="39.0" prefWidth="186.0" text="No 75/A Main Street Matale">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="377.0" layoutY="637.0" prefHeight="39.0" prefWidth="112.0" text="Thank You! " />
+            <Label layoutX="376.0" layoutY="676.0" prefHeight="39.0" prefWidth="94.0" text="Come again">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="bn" layoutX="26.0" layoutY="27.0" mnemonicParsing="false" onAction="#showBill" text="View" />
+   </children>
+</AnchorPane>

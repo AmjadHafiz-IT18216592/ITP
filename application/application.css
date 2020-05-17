@@ -1,0 +1,63 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#tx,#cb3,#fname,#lname,#ga{
+	-fx-prompt-text-fill:#072F5F;
+} 
+.datepicker-Text{
+	-fx-prompt-text-fill:#072F5F;
+} 
+
+.table-View{
+	-fx-background-color:transparent;
+	
+}
+#cb3{
+	-fx-font-size:17px;
+}
+
+
+.column-header-background{
+	-fx-background-color:'transparent';
+	
+}
+
+
+
+
+.column-header,.filler{
+	-fx-background-color:transparent;
+	-fx-border-width:0 0 3px 0;
+	-fx-border-color:#616CA7;
+	-fx-font-size:17px;
+	-fx-font-family:'Century Gothic';
+	-fx-size:60px;
+}
+
+#tp{
+	-fx-background-color:transparent;
+	-fx-border-width:2px 2px 2px 2px;
+	-fx-border-color:#616CA7;
+	-fx-border-radius:15;
+}
+#totView,#dis,#na,#bl,#prof,#da,#se,#ptc{
+	-fx-background-color:transparent;
+	-fx-border-width:2px 2px 2px 2px;
+	-fx-border-color:#616CA7;
+	-fx-border-radius:10;
+}
+
+.previousButton{
+	-fx-background-image:url('prev.png');
+	-fx-background-size:50px;
+	 -fx-background-repeat:no-repeat;
+	 -fx-background-position:60%;
+	 -fx-background-radius:100px;
+}
+#next{
+	
+	-fx-background-image:url('next.png');
+	-fx-background-size:80px;
+	 -fx-background-repeat:no-repeat;
+	 -fx-background-position:100%;
+	 -fx-background-radius:100px;
+	}
